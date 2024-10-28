@@ -1,4 +1,4 @@
-# Star Wars Character Cards
+#  🌠 Star Wars Character Cards
 
 Este projeto apresenta um conjunto de cards interativos de personagens do universo Star Wars, desenvolvido com HTML, Tailwind CSS e JavaScript. Em homenagem ao May the 4th, os cards permitem visualizar informações dos personagens e explorar detalhes adicionais através de um modal ao clicar no botão "Ver mais".
 
