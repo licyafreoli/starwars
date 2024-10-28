@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens de Star Wars</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .shine {
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-900 p-6">
+
+    <div id="cards-container" class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="character-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 hidden">
+        <div class="bg-gray-800 text-white p-6 rounded-lg max-w-sm w-full text-center">
+            <h2 id="modal-character-name" class="text-2xl font-bold mb-2"></h2>
+            <p id="modal-character-description" class="text-gray-300 mb-4"></p>
+            <p id="modal-character-extra" class="text-sm text-gray-400 mb-6"></p>
+            <button id="close-modal" class="px-4 py-2 bg-red-500 rounded-full hover:bg-red-600 focus:outline-none">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
